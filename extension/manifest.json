@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Bitcoin Wallet",
+    "version": "1.0",
+    "description": "A simple Bitcoin wallet extension.",
+    "permissions": ["storage", "activeTab", "https://mempool.space/*", "http://localhost:3001/"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+}

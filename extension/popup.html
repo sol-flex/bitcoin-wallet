@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bitcoin Wallet</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+    }
+    input, button {
+      margin: 10px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bitcoin Wallet</h1>
+  <div id="noWalletInfo">
+    <h3>Generate Wallet</h3>
+    <button id="generateWallet">Generate Wallet</button>
+  </div>
+  <div id="walletInfo">
+    <div id="walletBasicInfo">
+        <p id="bitcoinAddress">address</p>
+        <h3 id="bitcoinBalance"></h3>
+    </div>
+    <h3>Create Transaction</h3>
+    <input type="text" id="destAddress" placeholder="Destination Address" />
+    <input type="text" id="amount" placeholder="Amount in BTC" />
+    <button id="createTransaction">Send Transaction</button>
+  </div>
+  <script src="bundle.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
